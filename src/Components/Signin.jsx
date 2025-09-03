@@ -16,7 +16,7 @@ const Signin = () => {
       // update last login time
       const lastSignInTime = result?.user?.metadata?.lastSignInTime;
       const loginInfo = {email,lastSignInTime};
-      fetch(`http://localhost:5000/users`,{
+      fetch(`https://coffee-stores-server.onrender.com/users`,{
         method:"PATCH",
         headers:{
           "content-type":"application/json"

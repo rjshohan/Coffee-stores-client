@@ -17,7 +17,7 @@ const Users = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         // delete form database
-        fetch(`http://localhost:5000/users/${id}`, {
+        fetch(`https://coffee-stores-server.onrender.com/users/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
